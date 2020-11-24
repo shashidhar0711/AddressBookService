@@ -106,7 +106,7 @@ select * from AddressBook;
 /*Refactor by UC6*/
 /*Retrieve person by giving city*/
 select PersonFullName,PhoneNumber,City 
-from PersonData inner join PersonAddress
+from PersonData INNER JOIN PersonAddress
 on PersonData.PersonId = PersonAddress.PersonId
 where City = 'Bangarpet';
 
