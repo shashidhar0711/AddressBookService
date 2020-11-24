@@ -98,6 +98,11 @@ PersonId int foreign key references PersonData(PersonId)
 insert into AddressBook values('FriendsAddressBook','Friends','1');
 insert into AddressBook values('FamilysAddressBook','Family','2');
 
+/*To drop the table*/
+drop table PersonData;
+drop table PersonAddress;
+drop table AddressBook;
+
 /*UC13 Retrieves data from multiple table*/
 select * from PersonData;
 select * from PersonAddress;
